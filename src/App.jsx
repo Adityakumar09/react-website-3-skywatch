@@ -27,7 +27,7 @@ const App = () => {
       toast.success(`Fetched weather data for ${data.name},${data.country}  `)
       setWeather(data);
     });
-    console.log(weather)
+    // console.log(weather)
   };
 
   useEffect(()=>{
