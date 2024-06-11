@@ -16,7 +16,7 @@ const getweatherdata=(infoType,searchparam)=>{
 
 
 // converting image code fetched from api into url 
-const iconurlfromcode =(icon)=> `http://openweathermap.org/img/wn/${icon}@2x.png`
+const iconurlfromcode =(icon)=> `https://openweathermap.org/img/wn/${icon}@2x.png`
 
 const formattolocaltime=(secs,offset,format="cccc, dd LLL yyyy' | Local time: 'hh:mm a")=>DateTime.fromSeconds(secs+offset, {zone: "utc"}).toFormat(format);
 
